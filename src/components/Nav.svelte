@@ -47,25 +47,43 @@
 		display: block;
 	}
 
-	.title {
-		display: flex;
-		flex-flow: row;
-		justify-content: space-between;
-		width: 100%;
+	.left {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 1rem;
 	}
 
-	.title > * {
-		flex: 1 100%;
+	.right {
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 1rem;
+	}
+
+	.title-center {
+		display: inline-block;
+		white-space: nowrap;
+		margin: 0;
 	}
 </style>
 
 <nav>
-	<div class="title">
-		<div>November 3, 2022 York, NE</div>
-		<h1 class="title-center">Katherine & Spencer</h1>
-		<div>Okay</div>
-	</div>
+	<a class="title-center" href="/wedding">
+		<h1>Katherine & Spencer</h1>
+	</a>
 	<ul>
+		<li>
+			<div class="left">November 3, 2022</div>
+		</li>
+		<li>
+			<div class="right">York, NE</div>
+		</li>
+		<li>
+			<a
+				aria-current={segment === undefined ? 'page' : undefined}
+				href="/wedding">Home</a>
+		</li>
 		<li>
 			<a
 				aria-current={segment === 'schedule' ? 'page' : undefined}
