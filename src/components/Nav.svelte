@@ -66,9 +66,30 @@
 		white-space: nowrap;
 		margin: 0;
 	}
+
+	.hamburger {
+		position: absolute;
+		top: 0;
+		left: 0;
+		margin: 3rem;
+		cursor: pointer;
+		display: none;
+	}
+
+	@media screen and (max-width: 768px) {
+		.hamburger {
+			display: block;
+		}
+	}
 </style>
 
 <nav>
+	<div
+		class="hamburger"
+		role="button"
+		on:click={() => console.log('toggle menu')}>
+		menu
+	</div>
 	<a class="title-center" href="/wedding">
 		<h1>Katherine & Spencer</h1>
 	</a>
