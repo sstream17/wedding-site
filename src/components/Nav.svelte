@@ -46,9 +46,25 @@
 		padding: 1em 0.5em;
 		display: block;
 	}
+
+	.title {
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		width: 100%;
+	}
+
+	.title > * {
+		flex: 1 100%;
+	}
 </style>
 
 <nav>
+	<div class="title">
+		<div>November 3, 2022 York, NE</div>
+		<h1 class="title-center">Katherine & Spencer</h1>
+		<div>Okay</div>
+	</div>
 	<ul>
 		<li>
 			<a
