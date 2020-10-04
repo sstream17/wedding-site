@@ -68,10 +68,7 @@
 	}
 
 	.hamburger {
-		position: absolute;
-		top: 0;
-		left: 0;
-		margin: 3rem;
+		float: left;
 		cursor: pointer;
 		display: none;
 	}
@@ -80,19 +77,33 @@
 		.hamburger {
 			display: block;
 		}
+
+		ul {
+			display: none;
+		}
+
+		.title {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: baseline;
+		}
 	}
 </style>
 
 <nav>
-	<div
-		class="hamburger"
-		role="button"
-		on:click={() => console.log('toggle menu')}>
-		menu
+	<div class="title">
+		<div
+			class="hamburger"
+			role="button"
+			on:click={() => console.log('toggle menu')}>
+			menu
+		</div>
+		<a class="title-center" href="/wedding">
+			<h1>Katherine & Spencer</h1>
+		</a>
+		<div />
 	</div>
-	<a class="title-center" href="/wedding">
-		<h1>Katherine & Spencer</h1>
-	</a>
 	<ul>
 		<li>
 			<div class="left">November 3, 2022</div>
