@@ -50,11 +50,12 @@
 
 <nav>
 	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">home</a></li>
-		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">blog</a></li>
+		<li><a aria-current="{segment === 'schedule' ? 'page' : undefined}" href="/wedding/schedule">Schedule</a></li>
+		<li><a aria-current="{segment === 'travel' ? 'page' : undefined}" href="/wedding/travel">Travel</a></li>
+		<li><a aria-current="{segment === 'photos' ? 'page' : undefined}" href="/wedding/photos">Photos</a></li>
+		<li><a aria-current="{segment === 'wedding_party' ? 'page' : undefined}" href="/wedding/wedding_party">Wedding Party</a></li>
+		<li><a aria-current="{segment === 'registry' ? 'page' : undefined}" href="/wedding/registry">Registry</a></li>
+		<li><a aria-current="{segment === 'faq' ? 'page' : undefined}" href="/wedding/faq">FAQ</a></li>
+		<li><a aria-current="{segment === 'rsvp' ? 'page' : undefined}" href="/wedding/rsvp">RSVP</a></li>
 	</ul>
 </nav>
