@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "katherineandspencer",
+  "description": "Website for Katherine and Spencer's wedding.",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
