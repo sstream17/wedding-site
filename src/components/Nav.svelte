@@ -1,4 +1,6 @@
 <script lang="ts">
+	import HamburgerButton from "./HamburgerButton.svelte";
+
 	export let segment: string;
 
 	const mediumWidth: number = 768;
@@ -103,18 +105,7 @@
 		margin: 0;
 	}
 
-	.hamburger {
-		float: left;
-		cursor: pointer;
-		display: none;
-		z-index: 11;
-	}
-
 	@media screen and (max-width: 768px) {
-		.hamburger {
-			display: block;
-		}
-
 		.title {
 			display: flex;
 			flex-direction: row;
@@ -167,9 +158,7 @@
 
 <nav>
 	<div class="title">
-		<div class="hamburger" role="button" on:click={toggleHamburgerMenu}>
-			menu
-		</div>
+		<HamburgerButton onClick={toggleHamburgerMenu} {collapsed} />
 		<a class="title-center" href="/wedding">
 			<h1>Katherine & Spencer</h1>
 		</a>
