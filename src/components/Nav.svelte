@@ -164,10 +164,7 @@
 
 <nav>
 	<div class="title">
-		<div
-			class="hamburger"
-			role="button"
-			on:click={toggleHamburgerMenu}>
+		<div class="hamburger" role="button" on:click={toggleHamburgerMenu}>
 			menu
 		</div>
 		<a class="title-center" href="/wedding">
