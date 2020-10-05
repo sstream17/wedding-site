@@ -173,14 +173,14 @@
 			{#if page.title === 'Home'}
 				<li>
 					<a
-						on:click={() => (collapsed = !collapsed)}
+						on:click={() => (collapsed = true)}
 						aria-current={segment === undefined ? 'page' : undefined}
 						href="/wedding">{page.title}</a>
 				</li>
 			{:else}
 				<li>
 					<a
-						on:click={() => (collapsed = !collapsed)}
+						on:click={() => (collapsed = true)}
 						aria-current={segment === convertToSlug(page.title) ? 'page' : undefined}
 						href="/wedding/{convertToSlug(page.title)}">{page.title}</a>
 				</li>
