@@ -1,5 +1,30 @@
 <script lang="ts">
 	export let segment: string;
+
+	const mediumWidth = 768;
+
+	let collapsed: boolean = true;
+	let width: number;
+	$: collapsible = width <= mediumWidth;
+
+	const pages = [
+		{ title: "Home" },
+		{ title: "Schedule" },
+		{ title: "Travel" },
+		{ title: "Photos" },
+		{ title: "Wedding Party" },
+		{ title: "Registry" },
+		{ title: "FAQ" },
+		{ title: "RSVP" },
+	];
+
+	const convertToSlug = (value: string) => {
+		return value
+			.replace(/\W+/g, " ")
+			.split(/ /)
+			.map((word) => word.toLowerCase())
+			.join("_");
+	};
 </script>
 
 <style>
@@ -71,15 +96,12 @@
 		float: left;
 		cursor: pointer;
 		display: none;
+		z-index: 11;
 	}
 
 	@media screen and (max-width: 768px) {
 		.hamburger {
 			display: block;
-		}
-
-		ul {
-			display: none;
 		}
 
 		.title {
@@ -88,15 +110,49 @@
 			justify-content: space-between;
 			align-items: baseline;
 		}
+
+		ul {
+			display: none;
+		}
+
+		ul.collapsible {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 10;
+			width: 100%;
+			height: 100%;
+			background-color: #102c46;
+		}
+
+		ul.collapsible > li {
+			display: block;
+		}
+
+		ul.collapsible.show {
+			display: block;
+		}
+
+		.left {
+			position: static;
+			margin: inherit;
+		}
+
+		.right {
+			position: static;
+			margin: inherit;
+		}
 	}
 </style>
+
+<svelte:window bind:innerWidth={width} />
 
 <nav>
 	<div class="title">
 		<div
 			class="hamburger"
 			role="button"
-			on:click={() => console.log('toggle menu')}>
+			on:click={() => (collapsed = !collapsed)}>
 			menu
 		</div>
 		<a class="title-center" href="/wedding">
@@ -104,52 +160,29 @@
 		</a>
 		<div />
 	</div>
-	<ul>
+	<ul class:collapsible class:show={!collapsed}>
 		<li>
 			<div class="left">November 3, 2022</div>
 		</li>
 		<li>
 			<div class="right">York, NE</div>
 		</li>
-		<li>
-			<a
-				aria-current={segment === undefined ? 'page' : undefined}
-				href="/wedding">Home</a>
-		</li>
-		<li>
-			<a
-				aria-current={segment === 'schedule' ? 'page' : undefined}
-				href="/wedding/schedule">Schedule</a>
-		</li>
-		<li>
-			<a
-				aria-current={segment === 'travel' ? 'page' : undefined}
-				href="/wedding/travel">Travel</a>
-		</li>
-		<li>
-			<a
-				aria-current={segment === 'photos' ? 'page' : undefined}
-				href="/wedding/photos">Photos</a>
-		</li>
-		<li>
-			<a
-				aria-current={segment === 'wedding_party' ? 'page' : undefined}
-				href="/wedding/wedding_party">Wedding Party</a>
-		</li>
-		<li>
-			<a
-				aria-current={segment === 'registry' ? 'page' : undefined}
-				href="/wedding/registry">Registry</a>
-		</li>
-		<li>
-			<a
-				aria-current={segment === 'faq' ? 'page' : undefined}
-				href="/wedding/faq">FAQ</a>
-		</li>
-		<li>
-			<a
-				aria-current={segment === 'rsvp' ? 'page' : undefined}
-				href="/wedding/rsvp">RSVP</a>
-		</li>
+		{#each pages as page}
+			{#if page.title === 'Home'}
+				<li>
+					<a
+						on:click={() => (collapsed = !collapsed)}
+						aria-current={segment === undefined ? 'page' : undefined}
+						href="/wedding">{page.title}</a>
+				</li>
+			{:else}
+				<li>
+					<a
+						on:click={() => (collapsed = !collapsed)}
+						aria-current={segment === convertToSlug(page.title) ? 'page' : undefined}
+						href="/wedding/{convertToSlug(page.title)}">{page.title}</a>
+				</li>
+			{/if}
+		{/each}
 	</ul>
 </nav>
