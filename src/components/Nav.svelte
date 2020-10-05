@@ -130,7 +130,9 @@
 		}
 
 		ul.collapsible.show {
-			display: block;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 
 		.left {
