@@ -105,12 +105,16 @@
 		margin: 0;
 	}
 
+	.title-center > * {
+		margin: 0;
+	}
+
 	@media screen and (max-width: 768px) {
 		.title {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			align-items: baseline;
+			align-items: center;
 		}
 
 		ul.transitionable {
