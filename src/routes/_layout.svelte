@@ -15,5 +15,5 @@
 </style>
 
 <main class:main={segment !== 'wedding'}>
-    <slot />
+    <slot {segment} />
 </main>

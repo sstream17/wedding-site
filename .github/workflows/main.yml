@@ -24,4 +24,3 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.access_token }}
         BRANCH: gh-pages
         FOLDER: __sapper__/export
-    - run: npx serve __sapper__/export
