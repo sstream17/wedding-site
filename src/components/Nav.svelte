@@ -1,11 +1,17 @@
 <script lang="ts">
 	export let segment: string;
 
-	const mediumWidth = 768;
+	const mediumWidth: number = 768;
 
 	let collapsed: boolean = true;
+	let slidable: boolean = false;
 	let width: number;
 	$: collapsible = width <= mediumWidth;
+
+	$: if (width > mediumWidth) {
+		collapsed = true;
+		slidable = false;
+	}
 
 	const pages = [
 		{ title: "Home" },
@@ -24,6 +30,11 @@
 			.split(/ /)
 			.map((word) => word.toLowerCase())
 			.join("_");
+	};
+
+	const toggleHamburgerMenu = () => {
+		collapsed = !collapsed;
+		slidable = true;
 	};
 </script>
 
@@ -111,8 +122,8 @@
 			align-items: baseline;
 		}
 
-		ul {
-			display: none;
+		ul.slidable {
+			transition: transform 1s;
 		}
 
 		ul.collapsible {
@@ -122,6 +133,7 @@
 			z-index: 10;
 			width: 100%;
 			height: 100%;
+			transform: translateY(-100%);
 			background-color: #102c46;
 		}
 
@@ -133,6 +145,7 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			transform: translateY(0);
 		}
 
 		.left {
@@ -154,7 +167,7 @@
 		<div
 			class="hamburger"
 			role="button"
-			on:click={() => (collapsed = !collapsed)}>
+			on:click={toggleHamburgerMenu}>
 			menu
 		</div>
 		<a class="title-center" href="/wedding">
@@ -162,7 +175,7 @@
 		</a>
 		<div />
 	</div>
-	<ul class:collapsible class:show={!collapsed}>
+	<ul class:collapsible class:show={!collapsed} class:slidable>
 		<li>
 			<div class="left">November 3, 2022</div>
 		</li>
