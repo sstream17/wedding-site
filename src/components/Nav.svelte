@@ -4,13 +4,13 @@
 	const mediumWidth: number = 768;
 
 	let collapsed: boolean = true;
-	let slidable: boolean = false;
+	let transitionable: boolean = false;
 	let width: number;
 	$: collapsible = width <= mediumWidth;
 
 	$: if (width > mediumWidth) {
 		collapsed = true;
-		slidable = false;
+		transitionable = false;
 	}
 
 	const pages = [
@@ -34,7 +34,7 @@
 
 	const toggleHamburgerMenu = () => {
 		collapsed = !collapsed;
-		slidable = true;
+		transitionable = true;
 	};
 </script>
 
@@ -122,19 +122,25 @@
 			align-items: baseline;
 		}
 
-		ul.slidable {
-			transition: transform 1s;
+		ul.transitionable {
+			transition: opacity 0.75s ease-in-out;
 		}
 
-		ul.collapsible {
+		ul {
 			position: absolute;
 			top: 0;
 			left: 0;
 			z-index: 10;
 			width: 100%;
 			height: 100%;
-			transform: translateY(-100%);
+			opacity: 0;
 			background-color: #102c46;
+		}
+
+		ul.collapsible {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 
 		ul.collapsible > li {
@@ -142,10 +148,7 @@
 		}
 
 		ul.collapsible.show {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			transform: translateY(0);
+			opacity: 100;
 		}
 
 		.left {
@@ -172,7 +175,7 @@
 		</a>
 		<div />
 	</div>
-	<ul class:collapsible class:show={!collapsed} class:slidable>
+	<ul class:collapsible class:show={!collapsed} class:transitionable>
 		<li>
 			<div class="left">November 3, 2022</div>
 		</li>
