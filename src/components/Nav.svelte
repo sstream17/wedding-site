@@ -168,6 +168,7 @@
 		.right {
 			position: static;
 			margin: inherit;
+			margin-bottom: 3rem;
 		}
 	}
 </style>
