@@ -110,6 +110,10 @@
 	}
 
 	@media screen and (max-width: 768px) {
+		nav {
+			padding: 0 0.25rem;
+		}
+
 		.title {
 			display: flex;
 			flex-direction: row;

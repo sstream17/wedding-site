@@ -11,7 +11,7 @@
     }
 
     .icon {
-        width: 3rem;
+        width: 2.5rem;
         height: 4px;
         background: #fff;
         border-radius: 4px;
@@ -23,7 +23,7 @@
         content: "";
         position: absolute;
         display: flex;
-        width: 3rem;
+        width: 2.5rem;
         height: 4px;
         background: #fff;
         border-radius: 4px;
@@ -31,11 +31,11 @@
     }
 
     .icon::before {
-        transform: translateY(-12px);
+        transform: translateY(-10px);
     }
 
     .icon::after {
-        transform: translateY(12px);
+        transform: translateY(10px);
     }
 
     .hamburger.show .icon {
