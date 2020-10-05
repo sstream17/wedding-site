@@ -133,7 +133,17 @@
 			width: 100%;
 			height: 100%;
 			opacity: 0;
-			background-color: #102c46;
+			background: #102C46;
+		}
+
+		@supports (
+			(-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))
+		) {
+			ul {
+				background: none;
+				backdrop-filter: blur(5px);
+				-webkit-backdrop-filter: blur(5px);
+			}
 		}
 
 		ul.collapsible {
