@@ -153,11 +153,15 @@
 		}
 
 		ul.collapsible > li {
-			display: block;
+			display: none;
 		}
 
 		ul.collapsible.show {
 			opacity: 100;
+		}
+
+		ul.collapsible.show > li {
+			display: block;
 		}
 
 		.left {
