@@ -130,6 +130,7 @@
 			top: 0;
 			left: 0;
 			z-index: 10;
+			pointer-events: none;
 			width: 100%;
 			height: 100%;
 			opacity: 0;
@@ -158,6 +159,7 @@
 
 		ul.collapsible.show {
 			opacity: 100;
+			pointer-events: auto;
 		}
 
 		ul.collapsible.show > li {
