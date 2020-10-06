@@ -153,17 +153,9 @@
 			justify-content: center;
 		}
 
-		ul.collapsible > li {
-			display: none;
-		}
-
 		ul.collapsible.show {
 			opacity: 100;
 			pointer-events: auto;
-		}
-
-		ul.collapsible.show > li {
-			display: block;
 		}
 
 		.left {
