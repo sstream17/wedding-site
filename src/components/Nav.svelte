@@ -138,12 +138,12 @@
 		}
 
 		@supports (
-			(-webkit-backdrop-filter: blur(5px)) or (backdrop-filter: blur(5px))
+			(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))
 		) {
 			ul {
-				background: none;
-				backdrop-filter: blur(5px);
-				-webkit-backdrop-filter: blur(5px);
+				background: #102C46B2;
+				backdrop-filter: blur(10px);
+				-webkit-backdrop-filter: blur(10px);
 			}
 		}
 
