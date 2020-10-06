@@ -1,12 +1,12 @@
 <script lang="ts">
+    import Nav from "../components/Nav.svelte";
+
     export let segment: string;
 </script>
 
 <style>
-    .main {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    main {
+        position: relative;
         max-width: 56em;
         padding: 2em;
         margin: 0 auto;
@@ -14,6 +14,8 @@
     }
 </style>
 
-<main class:main={segment !== 'wedding'}>
+<Nav {segment} />
+
+<main>
     <slot />
 </main>

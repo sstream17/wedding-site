@@ -2,4 +2,6 @@
 	<title>Katherine & Spencer's Wedding</title>
 </svelte:head>
 
-<a href="wedding">Site</a>
+<h1>Great success!</h1>
+
+<p><strong>Welcome!</strong></p>
