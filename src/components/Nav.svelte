@@ -176,7 +176,7 @@
 <nav>
 	<div class="title">
 		<HamburgerButton onClick={toggleHamburgerMenu} {collapsed} />
-		<a class="title-center" href=".">
+		<a class="title-center" href="wedding">
 			<h1>Katherine & Spencer</h1>
 		</a>
 		<div />
@@ -194,14 +194,14 @@
 					<a
 						on:click={() => (collapsed = true)}
 						aria-current={segment === undefined ? 'page' : undefined}
-						href=".">{page.title}</a>
+						href="wedding">{page.title}</a>
 				</li>
 			{:else}
 				<li>
 					<a
 						on:click={() => (collapsed = true)}
 						aria-current={segment === convertToSlug(page.title) ? 'page' : undefined}
-						href="{convertToSlug(page.title)}">{page.title}</a>
+						href="wedding/{convertToSlug(page.title)}">{page.title}</a>
 				</li>
 			{/if}
 		{/each}
