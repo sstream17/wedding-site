@@ -183,7 +183,7 @@
 	</div>
 	<ul class:collapsible class:show={!collapsed} class:transitionable>
 		<li>
-			<div class="left">November 3, 2022</div>
+			<div class="left">June 18, 2022</div>
 		</li>
 		<li>
 			<div class="right">York, NE</div>
