@@ -1,4 +1,11 @@
+<script lang="ts">
+    import StoreRegistry from '../../components/registry/StoreRegistry.svelte';
+
+</script>
+
 <h1>Registry</h1>
+
+<StoreRegistry title="Target" url="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/549824664?selectedRLVFilters=_recommended" />
 
 <a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/549824664?selectedRLVFilters=_recommended">
     Bed Bath & Beyond
