@@ -11,12 +11,17 @@
             <p>The bride's best friend</p>
         </WeddingPartyCard>
         <WeddingPartyCard
-            name="Emily Wiles"
+            name="Eden Gose"
+            role="Bridesmaid">
+            <p>Friend of the bride</p>
+        </WeddingPartyCard>
+        <WeddingPartyCard
+            name="Sam Wiles"
             role="Bridesmaid">
             <p>Cousin of the bride</p>
         </WeddingPartyCard>
         <WeddingPartyCard
-            name="Sammy Wiles"
+            name="Emily Wiles"
             role="Bridesmaid">
             <p>Cousin of the bride</p>
         </WeddingPartyCard>
@@ -44,6 +49,11 @@
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Syrus Bomberger"
+            role="Groomsman">
+            <p>Friend of the groom</p>
+        </WeddingPartyCard>
+        <WeddingPartyCard
+            name="Nicholas Cowles"
             role="Groomsman">
             <p>Friend of the groom</p>
         </WeddingPartyCard>
