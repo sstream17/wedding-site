@@ -40,7 +40,50 @@
 	};
 </script>
 
+<svelte:window bind:innerWidth={width} />
+
+<nav>
+	<div class="title">
+		<HamburgerButton onClick={toggleHamburgerMenu} {collapsed} />
+		<a class="title-center" href="wedding">
+			<h1>Katherine & Spencer</h1>
+		</a>
+		<div />
+	</div>
+	<ul class:collapsible class:show={!collapsed} class:transitionable>
+		<li>
+			<div class="left">June 18, 2022</div>
+		</li>
+		<li>
+			<div class="right">York, NE</div>
+		</li>
+		{#each pages as page}
+			{#if page.title === 'Home'}
+				<li>
+					<a
+						on:click={() => (collapsed = true)}
+						aria-current={segment === undefined ? 'page' : undefined}
+						href="wedding"
+					>{page.title}</a>
+				</li>
+			{:else}
+				<li>
+					<a
+						on:click={() => (collapsed = true)}
+						aria-current={segment === convertToSlug(page.title) ? 'page' : undefined}
+						href="wedding/{convertToSlug(page.title)}"
+					>{page.title}</a>
+				</li>
+			{/if}
+		{/each}
+	</ul>
+</nav>
+
 <style>
+	h1 {
+		font-family: "Homemade Apple", cursive;
+	}
+
 	nav {
 		border-bottom: 1px solid rgba(255, 192, 203, 0.1);
 		font-weight: 300;
@@ -80,9 +123,11 @@
 	}
 
 	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
 		display: block;
+		font-size: 1.5em;
+		font-family: "Amatic SC", cursive;
+		padding: 1em 0.5em;
+		text-decoration: none;
 	}
 
 	.left {
@@ -134,14 +179,15 @@
 			width: 100%;
 			height: 100%;
 			opacity: 0;
-			background: #102C46;
+			background: #102c46;
 		}
 
 		@supports (
-			(-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))
+			(-webkit-backdrop-filter: blur(10px)) or
+				(backdrop-filter: blur(10px))
 		) {
 			ul {
-				background: #102C46B2;
+				background: #102c46b2;
 				backdrop-filter: blur(10px);
 				-webkit-backdrop-filter: blur(10px);
 			}
@@ -170,40 +216,3 @@
 		}
 	}
 </style>
-
-<svelte:window bind:innerWidth={width} />
-
-<nav>
-	<div class="title">
-		<HamburgerButton onClick={toggleHamburgerMenu} {collapsed} />
-		<a class="title-center" href="wedding">
-			<h1>Katherine & Spencer</h1>
-		</a>
-		<div />
-	</div>
-	<ul class:collapsible class:show={!collapsed} class:transitionable>
-		<li>
-			<div class="left">June 18, 2022</div>
-		</li>
-		<li>
-			<div class="right">York, NE</div>
-		</li>
-		{#each pages as page}
-			{#if page.title === 'Home'}
-				<li>
-					<a
-						on:click={() => (collapsed = true)}
-						aria-current={segment === undefined ? 'page' : undefined}
-						href="wedding">{page.title}</a>
-				</li>
-			{:else}
-				<li>
-					<a
-						on:click={() => (collapsed = true)}
-						aria-current={segment === convertToSlug(page.title) ? 'page' : undefined}
-						href="wedding/{convertToSlug(page.title)}">{page.title}</a>
-				</li>
-			{/if}
-		{/each}
-	</ul>
-</nav>
