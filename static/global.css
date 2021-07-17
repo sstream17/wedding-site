@@ -48,6 +48,10 @@ code {
 	flex-direction: column;
 }
 
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
 .justify-content-around {
 	justify-content: space-around;
 }
