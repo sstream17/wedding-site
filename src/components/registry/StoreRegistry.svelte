@@ -4,12 +4,6 @@
     export let images: string[];
 </script>
 
-<style>
-    .margin-bottom {
-        margin-bottom: 2em;
-    }
-</style>
-
 <div class="margin-bottom">
     <h2>{title}</h2>
 
@@ -21,3 +15,9 @@
         {/each}
     </div>
 </div>
+
+<style>
+    .margin-bottom {
+        margin-bottom: 2em;
+    }
+</style>
