@@ -5,7 +5,7 @@
 
 <h1>Registry</h1>
 
-<StoreRegistry title="Target" url="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/549824664?selectedRLVFilters=_recommended" />
+<StoreRegistry title="Target" url="https://www.target.com/gift-registry/giftgiver?registryId=ef3b88706ae34d38a65c6cc71536b129&type=WEDDING" />
 
 <a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/549824664?selectedRLVFilters=_recommended">
     Bed Bath & Beyond

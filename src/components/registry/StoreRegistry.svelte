@@ -1,16 +1,30 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
-
     export let title: string;
     export let url: string;
-
-    onMount(async () => {
-        const response = await fetch(url);
-
-        const html = await response.text();
-
-        console.log(html);
-    });
 </script>
 
-<h1>{title}</h1>
+<h2>{title}</h2>
+
+<div class="flex-row justify-content-around flex-wrap">
+    <a href={url}>
+        <img
+            src="./registry/target1.png"
+            alt={`${title} registry item`}
+            width="200px"
+        />
+    </a>
+    <a href={url}>
+        <img
+            src="./registry/target2.png"
+            alt={`${title} registry item`}
+            width="200px"
+        />
+    </a>
+    <a href={url}>
+        <img
+            src="./registry/target3.png"
+            alt={`${title} registry item`}
+            width="200px"
+        />
+    </a>
+</div>
