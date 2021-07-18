@@ -90,6 +90,10 @@
 </nav>
 
 <style>
+	h1 {
+		font-size: 2.5em;
+	}
+
 	nav {
 		border-bottom: 1px solid rgba(255, 192, 203, 0.1);
 		font-weight: 300;
@@ -129,9 +133,9 @@
 	}
 
 	a {
-		text-decoration: none;
-		padding: 1em 0.5em;
 		display: block;
+		padding: 1em 0.5em;
+		text-decoration: none;
 	}
 
 	.left {
