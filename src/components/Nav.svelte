@@ -91,7 +91,7 @@
 
 <style>
 	h1 {
-		font-family: "Homemade Apple", cursive;
+		font-size: 2.5em;
 	}
 
 	nav {
@@ -134,8 +134,6 @@
 
 	a {
 		display: block;
-		font-size: 1.5em;
-		font-family: "Amatic SC", cursive;
 		padding: 1em 0.5em;
 		text-decoration: none;
 	}
