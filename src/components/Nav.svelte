@@ -42,6 +42,16 @@
 
 <svelte:window bind:innerWidth={width} />
 
+<svelte:head>
+	{#if collapsible && !collapsed}
+		<style>
+			body {
+				overflow: hidden;
+			}
+		</style>
+	{/if}
+</svelte:head>
+
 <nav>
 	<div class="title">
 		<HamburgerButton onClick={toggleHamburgerMenu} {collapsed} />

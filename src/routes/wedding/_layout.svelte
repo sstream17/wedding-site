@@ -4,6 +4,12 @@
 	export let segment: string;
 </script>
 
+<Nav {segment} />
+
+<main>
+	<slot />
+</main>
+
 <style>
 	main {
 		position: relative;
@@ -13,9 +19,3 @@
 		box-sizing: border-box;
 	}
 </style>
-
-<Nav {segment} />
-
-<main>
-	<slot />
-</main>

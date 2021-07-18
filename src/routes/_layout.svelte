@@ -2,6 +2,10 @@
     export let segment: string;
 </script>
 
+<main class:main={segment !== 'wedding'}>
+    <slot />
+</main>
+
 <style>
     .main {
         display: flex;
@@ -13,7 +17,3 @@
         box-sizing: border-box;
     }
 </style>
-
-<main class:main={segment !== 'wedding'}>
-    <slot />
-</main>

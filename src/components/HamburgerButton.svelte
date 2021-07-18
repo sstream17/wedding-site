@@ -3,6 +3,10 @@
     export let collapsed: boolean;
 </script>
 
+<div class="hamburger" class:show={!collapsed} role="button" on:click={onClick}>
+    <div class="icon" />
+</div>
+
 <style>
     .hamburger {
         cursor: pointer;
@@ -60,7 +64,3 @@
         }
     }
 </style>
-
-<div class="hamburger" class:show={!collapsed} role="button" on:click={onClick}>
-    <div class="icon" />
-</div>
