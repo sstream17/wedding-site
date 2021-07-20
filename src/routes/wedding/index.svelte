@@ -17,8 +17,7 @@
 	/>
 </header>
 
-<div class="content">
-</div>
+<div class="content" />
 
 <style>
 	.zoom {
@@ -26,7 +25,7 @@
 		overflow: hidden;
 		padding-bottom: 25%;
 	}
-	
+
 	.zoom img {
 		position: absolute;
 		top: 0;
@@ -38,7 +37,7 @@
 
 	h1 {
 		font-weight: bolder;
-		font-size: 2.5em;
+		font-size: 4em;
 		margin-top: 30vh;
 		text-shadow: 1px 1px 4px black;
 		z-index: 100;
@@ -52,7 +51,8 @@
 
 	@media screen and (max-width: 768px) {
 		h1 {
-			margin-top: 10vh;
+			font-size: 2.5em;
+			margin-top: 4vh;
 		}
 	}
 </style>
