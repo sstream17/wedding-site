@@ -1,7 +1,7 @@
 <h1>Travel</h1>
 <h2>Ceremony & Reception</h2>
 
-<div class="hotel-card flex-row justify-content-around flex-wrap">
+<div class="travel-card flex-row justify-content-around flex-wrap">
     <div>
         <h3>Holthus Convention Center</h3>
         <p>3130 Holen Ave</p>
@@ -24,7 +24,7 @@
 </p>
 
 <h2>Hotel</h2>
-<div class="hotel-card flex-row justify-content-around flex-wrap">
+<div class="travel-card flex-row justify-content-around flex-wrap">
     <div>
         <h3>Hampton Inn York</h3>
         <p>309 W David Dr</p>
@@ -56,23 +56,23 @@
         margin: 0 auto;
     }
 
-    .hotel-card {
+    .travel-card {
         align-items: center;
         font-size: 20px;
     }
 
-    .hotel-card,
-    .hotel-card h3,
-    .hotel-card a {
+    .travel-card,
+    .travel-card h3,
+    .travel-card a {
         text-align: start !important;
         line-height: 1;
     }
 
-    .hotel-card a {
+    .travel-card a {
         display: contents;
     }
 
-    .hotel-card p {
+    .travel-card p {
         margin: 0.5em 0;
     }
 
