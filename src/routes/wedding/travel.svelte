@@ -19,7 +19,7 @@
 </div>
 
 <p>
-    Both the wedding ceremony and reception will be held at the Holthus
+    The wedding ceremony, cocktail hour, and reception will be held at the Holthus
     Convention Center in York, Nebraska.
 </p>
 
@@ -41,7 +41,7 @@
 
 <p>
     The hotel is just half a mile south of the Holthus Convention Center. Rooms
-    are availabe for reservation between the dates of June 17, 2022 to June 19,
+    are availabe for reservation between the dates of June 17, 2022 and June 19,
     2022. Reservations must be made before May 19, 2022.
 </p>
 
