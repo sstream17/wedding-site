@@ -1,10 +1,11 @@
 <script lang="ts">
     let name: string;
-    let numberGuests: number = 1;
+    let numberAdults: number = 1;
+    let numberChildren: number = 0;
     let notes: string;
 
     const handleSubmit = () => {
-        console.log(`submitting ${name} for ${numberGuests}`);
+        console.log(`submitting ${name} for ${numberAdults}`);
     };
 </script>
 
@@ -12,17 +13,35 @@
 
 <form on:submit|preventDefault={handleSubmit}>
     <div class="grid">
-        <label for="name">Your name</label>
+        <label for="name">Your name*</label>
         <input id="name" type="text" required bind:value={name} />
 
-        <label for="guests">How many guests including yourself?</label>
-        <input id="guests" type="number" required bind:value={numberGuests} />
+        <label for="adults">How many adults including yourself?*</label>
+        <input
+            id="adults"
+            type="number"
+            min="1"
+            required
+            bind:value={numberAdults}
+        />
+
+        <label for="children">How many children?*</label>
+        <input
+            id="children"
+            type="number"
+            min="0"
+            required
+            bind:value={numberChildren}
+        />
 
         <label for="notes">Any additional notes</label>
-        <textarea id="notes" required bind:value={notes} />
+        <textarea id="notes" bind:value={notes} />
 
         <div />
-        <input type="submit" />
+        <input type="submit" value="Send" />
+
+        <div />
+        <div>* Required</div>
     </div>
 </form>
 
@@ -50,7 +69,8 @@
             text-align: start;
         }
 
-        input, textarea {
+        input,
+        textarea {
             margin-bottom: 1em;
         }
 
