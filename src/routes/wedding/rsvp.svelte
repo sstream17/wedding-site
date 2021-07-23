@@ -10,7 +10,7 @@
     const handleSubmit = () => {
         localStorage.setItem("rsvp", "true");
         const message =
-            "Thank you for inviting us to join your wedding celebration.";
+            "Thank you for the invitation to your wedding celebration.";
         window.open(
             `mailto:rsvp@katherineandspencer.com?subject=${encodeURI(
                 name
