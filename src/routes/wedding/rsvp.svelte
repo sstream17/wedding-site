@@ -7,16 +7,31 @@
     let notes: string;
     let submitted: boolean = false;
 
-    const handleSubmit = () => {
-        localStorage.setItem("rsvp", "true");
-        const message =
-            "Thank you for the invitation to your wedding celebration.";
-        window.open(
-            `mailto:rsvp@katherineandspencer.com?subject=${encodeURI(
-                name
-            )}%20RSVP&body=${encodeURI(message)}`
+    const handleSubmit = async () => {
+        const email = {
+            name: name,
+            numberAdults: numberAdults,
+            numberChildren: numberChildren,
+            additionalNotes: notes,
+        };
+
+        const options = {
+            method: "POST",
+            body: JSON.stringify(email),
+            headers: {
+                "Content-Type": "application/json",
+            },
+        };
+
+        const response = await fetch(
+            "https://katherineandspencerweddingrsvp.azurewebsites.net/api/WeddingEmail",
+            options
         );
-        submitted = true;
+
+        if (response.ok) {
+            localStorage.setItem("rsvp", "true");
+            submitted = true;
+        }
     };
 
     onMount(() => {
