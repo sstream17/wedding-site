@@ -1,34 +1,43 @@
 <h1>Photos</h1>
 
 <div class="grid">
-    <img
-        class="img-1"
-        src="./photos/katie+spencer1.jpg"
-        alt="Katie and Spencer"
-    />
-    <img
-        class="img-2"
-        src="./photos/katie+spencer2.jpg"
-        alt="Katie and Spencer"
-    />
-    <img
-        class="img-3"
-        src="./photos/katie+spencer3.jpg"
-        alt="Katie and Spencer"
-    />
+    <div class="zoom img-1">
+        <img src="./photos/katie+spencer1.jpg" alt="Katie and Spencer" />
+    </div>
+    <div class="zoom img-2">
+        <img src="./photos/katie+spencer2.jpg" alt="Katie and Spencer" />
+    </div>
+    <div class="zoom img-3">
+        <img src="./photos/katie+spencer3.jpg" alt="Katie and Spencer" />
+    </div>
 </div>
 
 <p>
     <a
         href="https://brittanymccoyphotography.client-gallery.com/gallery/katie-and-spencer/"
-    >View or purchase more photos.</a>
+    >View more photos.</a>
 </p>
 
 <style>
+    .zoom {
+        position: relative;
+        overflow: hidden;
+        padding: 50%;
+    }
+
     img {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
+        will-change: transform;
         object-fit: cover;
+        transition: transform 1s;
+    }
+
+    img:hover {
+        transform: scale(110%);
     }
 
     .grid {
