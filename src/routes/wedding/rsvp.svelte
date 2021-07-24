@@ -53,8 +53,9 @@
             <label for="notes">Any additional notes</label>
             <textarea
                 id="notes"
-                bind:value={notes}
                 placeholder="Please include the names of all guests"
+                rows="4"
+                bind:value={notes}
             />
 
             <div />
