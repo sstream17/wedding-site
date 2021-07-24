@@ -2,6 +2,7 @@
     import { onMount } from "svelte";
 
     let name: string;
+    let emailAddress: string;
     let numberAdults: number = 1;
     let numberChildren: number = 0;
     let notes: string;
@@ -10,6 +11,7 @@
     const handleSubmit = async () => {
         const email = {
             name: name,
+            emailAddress: emailAddress,
             numberAdults: numberAdults,
             numberChildren: numberChildren,
             additionalNotes: notes,
@@ -46,6 +48,9 @@
         <div class="grid">
             <label for="name">Your name*</label>
             <input id="name" type="text" required bind:value={name} />
+
+            <label for="email">Your email address*</label>
+            <input id="email" type="text" required bind:value={emailAddress} />
 
             <label for="adults">How many adults including yourself?*</label>
             <input
