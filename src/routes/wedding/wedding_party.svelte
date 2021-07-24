@@ -52,42 +52,42 @@
         <WeddingPartyCard
             name="Matthew Schaaf"
             role="Best Man"
-            img="placeholder.png"
+            img="./wedding_party/matthew.jpg"
         >
             <p>The groom's best friend</p>
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Zak Keck"
             role="Groomsman"
-            img="placeholder.png"
+            img="./wedding_party/zak.jpg"
         >
             <p>Friend of the groom</p>
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Syrus Bomberger"
             role="Groomsman"
-            img="placeholder.png"
+            img="./wedding_party/syrus.jpg"
         >
             <p>Friend of the groom</p>
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Nicholas Cowles"
             role="Groomsman"
-            img="placeholder.png"
+            img="./wedding_party/nicholas.jpg"
         >
             <p>Friend of the groom</p>
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Chase Grossman"
             role="Groomsman"
-            img="placeholder.png"
+            img="./wedding_party/chase.jpg"
         >
             <p>Cousin of the groom</p>
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Drew Stream"
             role="Groomsman"
-            img="placeholder.png"
+            img="./wedding_party/drew.jpg"
         >
             <p>Brother of the groom</p>
         </WeddingPartyCard>
