@@ -51,7 +51,11 @@
             />
 
             <label for="notes">Any additional notes</label>
-            <textarea id="notes" bind:value={notes} />
+            <textarea
+                id="notes"
+                bind:value={notes}
+                placeholder="Please include the names of all guests"
+            />
 
             <div />
             <input type="submit" value="Send" />
@@ -78,7 +82,7 @@
 
     .grid {
         display: grid;
-        grid-template-columns: 3fr 2fr;
+        grid-template-columns: 2fr 3fr;
         gap: 1em 1em;
         justify-content: center;
         align-content: center;
