@@ -3,7 +3,7 @@
 </script>
 
 <h1>Wedding Party</h1>
-<div class="flex-row justify-content-around">
+<div class="flex-row flex-wrap justify-content-around">
     <div class="flex-col">
         <WeddingPartyCard
             name="Elissa Fuelberth"
