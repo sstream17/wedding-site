@@ -4,18 +4,21 @@
 	export let segment: string;
 </script>
 
+<Nav {segment} />
+
+<main class:center-content={segment !== undefined}>
+	<slot />
+</main>
+
 <style>
-	main {
-		position: relative;
+	.center-content {
 		max-width: 56em;
 		padding: 2em;
+	}
+
+	main {
+		position: relative;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
 </style>
-
-<Nav {segment} />
-
-<main>
-	<slot />
-</main>
