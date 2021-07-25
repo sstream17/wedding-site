@@ -102,9 +102,20 @@
         Thank you for your RSVP. We look forward to you joining us on our
         special day!
     </h2>
+
+    <p class="center-text">
+        If you need to make changes to your RSVP or have any questions, email
+        <a
+            href="mailto:rsvp@katherineandspencer.com"
+        >rsvp@katherineandspencer.com</a>.
+    </p>
 {/if}
 
 <style>
+    .center-text {
+        text-align: center;
+    }
+
     .alert {
         color: red;
         display: none;
