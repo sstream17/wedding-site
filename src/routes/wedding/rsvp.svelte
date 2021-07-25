@@ -6,9 +6,13 @@
     let numberAdults: number = 1;
     let numberChildren: number = 0;
     let notes: string;
+
     let submitted: boolean = false;
+    let error: boolean = false;
 
     const handleSubmit = async () => {
+        error = false;
+
         const email = {
             name: name,
             emailAddress: emailAddress,
@@ -33,7 +37,10 @@
         if (response.ok) {
             localStorage.setItem("rsvp", "true");
             submitted = true;
+            return;
         }
+
+        error = true;
     };
 
     onMount(() => {
@@ -83,6 +90,11 @@
 
             <div />
             <div>* Required</div>
+
+            <div />
+            <div class="alert" class:error>
+                We were unable to send your RSVP. Please try again later.
+            </div>
         </div>
     </form>
 {:else}
@@ -93,6 +105,15 @@
 {/if}
 
 <style>
+    .alert {
+        color: red;
+        display: none;
+    }
+
+    .error {
+        display: block;
+    }
+
     label {
         text-align: end;
     }
