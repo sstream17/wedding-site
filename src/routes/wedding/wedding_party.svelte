@@ -71,7 +71,7 @@
             <p>Friend of the groom</p>
         </WeddingPartyCard>
         <WeddingPartyCard
-            name="Nicholas Cowles"
+            name="Nick Cowles"
             role="Groomsman"
             img="./wedding_party/nicholas.jpg"
         >
