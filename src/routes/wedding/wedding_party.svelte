@@ -8,42 +8,42 @@
         <WeddingPartyCard
             name="Elissa Fuelberth"
             role="Maid of Honor"
-            img="placeholder.png"
+            img="./wedding_party/elissa.jpg"
         >
             <p>The bride's best friend</p>
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Eden Gose"
             role="Bridesmaid"
-            img="placeholder.png"
+            img="./wedding_party/eden.jpg"
         >
             <p>Friend of the bride</p>
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Sam Wiles"
             role="Bridesmaid"
-            img="placeholder.png"
+            img="./wedding_party/sam.jpg"
         >
             <p>Cousin of the bride</p>
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Emily Wiles"
             role="Bridesmaid"
-            img="placeholder.png"
+            img="./wedding_party/emily.jpg"
         >
             <p>Cousin of the bride</p>
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Molli Curry"
             role="Bridesmaid"
-            img="placeholder.png"
+            img="./wedding_party/molli.jpg"
         >
             <p>Friend of the bride</p>
         </WeddingPartyCard>
         <WeddingPartyCard
             name="Lauren Nunez"
             role="Bridesmaid"
-            img="placeholder.png"
+            img="./wedding_party/lauren.jpg"
         >
             <p>Friend of the bride</p>
         </WeddingPartyCard>
