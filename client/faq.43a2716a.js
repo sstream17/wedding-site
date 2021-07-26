@@ -1,0 +1,1 @@
+import{S as s,i as a,s as t,e as r,k as c,c as e,a as n,m as o,d as l,f as d,g as f,n as i}from"./client.21dbd0cf.js";function u(s){let a,t;return{c(){a=r("h1"),t=c("FAQ")},l(s){a=e(s,"H1",{});var r=n(a);t=o(r,"FAQ"),r.forEach(l)},m(s,r){d(s,a,r),f(a,t)},p:i,i:i,o:i,d(s){s&&l(a)}}}export default class extends s{constructor(s){super(),a(this,s,null,u,t,{})}}
