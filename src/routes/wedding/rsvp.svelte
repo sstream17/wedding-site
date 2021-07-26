@@ -97,6 +97,15 @@
             </div>
         </div>
     </form>
+    <p class="center-text">
+        Send your RSVP electronically above, or return the card you received in
+        the mail to:
+    </p>
+    <div class="address center-text">
+        <h3>Katie Wiles</h3>
+        <p>5131 Country Hill Rd</p>
+        <p>Lincoln, NE 68516</p>
+    </div>
 {:else}
     <h2>
         Thank you for your RSVP. We look forward to you joining us on our
@@ -112,6 +121,10 @@
 {/if}
 
 <style>
+    .address {
+        line-height: 1;
+    }
+
     .center-text {
         text-align: center;
     }
