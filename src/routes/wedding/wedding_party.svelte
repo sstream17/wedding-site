@@ -192,7 +192,7 @@
 
 <style>
     p {
-        max-width: 50%;
+        max-width: 24em;
         margin-left: auto;
         margin-right: auto;
     }
