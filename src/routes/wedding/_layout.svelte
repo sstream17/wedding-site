@@ -6,7 +6,10 @@
 
 <Nav {segment} />
 
-<main class:center-content={segment !== undefined}>
+<main
+	class:center-content={segment !== undefined}
+	class:wider={segment === 'wedding_party'}
+>
 	<slot />
 </main>
 
@@ -14,6 +17,10 @@
 	.center-content {
 		max-width: 56em;
 		padding: 2em;
+	}
+
+	.wider {
+		max-width: 70em !important;
 	}
 
 	main {
