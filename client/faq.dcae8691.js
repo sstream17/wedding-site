@@ -1,0 +1,1 @@
+import{S as s,i as a,s as t,e,k as r,c,a as n,m as o,d as l,f as i,g as u,n as f}from"./client.6e451bbc.js";function d(s){let a,t;return{c(){a=e("h1"),t=r("FAQ")},l(s){a=c(s,"H1",{});var e=n(a);t=o(e,"FAQ"),e.forEach(l)},m(s,e){i(s,a,e),u(a,t)},p:f,i:f,o:f,d(s){s&&l(a)}}}export default class extends s{constructor(s){super(),a(this,s,null,d,t,{})}}
