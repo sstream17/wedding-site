@@ -11,13 +11,11 @@
             img="./wedding_party/elissa.jpg"
         >
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Elissa and Katie have been “sisters” from the very start. They
+                met when they were just tiny babies and grew up together,
+                sharing so many memories over the years. Some of their favorites
+                are spending holidays together (Christmas in particular), and
+                going on road trips to fun places!
             </p>
         </WeddingPartyCard>
         <WeddingPartyCard
@@ -26,13 +24,12 @@
             img="./wedding_party/eden.jpg"
         >
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Eden and Katie have been besties ever since they were babies.
+                Some favorite memories that they share together are playing
+                dress up and cooking in the kitchen when they were little, going
+                on fun family vacations during the summer, pigging out on all
+                the food they love to eat together and all the fun times in
+                between!
             </p>
         </WeddingPartyCard>
         <WeddingPartyCard
@@ -41,13 +38,10 @@
             img="./wedding_party/sam.jpg"
         >
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Sam and Katie were always the cousins that were so close they
+                were like sisters. They spent the years always embarrassing
+                themselves at family parties, or sitting and talking about life
+                (their favorite)!
             </p>
         </WeddingPartyCard>
         <WeddingPartyCard
@@ -56,13 +50,11 @@
             img="./wedding_party/emily.jpg"
         >
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Emily and Katie are cousins and have always been close over the
+                years. The funniest memory they shared together was when Emily’s
+                older cousin pushed Katie into a pile of leaves (on camera, of
+                course) and all the memories they created when they went on
+                their family trip to Wyoming!
             </p>
         </WeddingPartyCard>
         <WeddingPartyCard
@@ -71,13 +63,12 @@
             img="./wedding_party/molli.jpg"
         >
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Molli and Katie’s relationship has always been a wild one. Over
+                the 15+ years of knowing each other, the memories have been
+                nothing short of crazy adventures, like making “grass and berry
+                soup” (ask them how to make it, you won’t regret it), sharing a
+                locker in 6th grade, going through hot girl summer together, and
+                all the fun in between!
             </p>
         </WeddingPartyCard>
         <WeddingPartyCard
@@ -86,13 +77,10 @@
             img="./wedding_party/lauren.jpg"
         >
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Lauren and Katie have been “BFFS4L” ever since they became next
+                door neighbors over 17 years ago. A bunch of memories were made
+                when they moved in together back in 2019 and adopted Miso, and
+                also going to Hawaii and having fun there!
             </p>
         </WeddingPartyCard>
     </div>
