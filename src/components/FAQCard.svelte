@@ -1,13 +1,11 @@
 <script lang="ts">
-    export let q: string;
-    export let a: string;
     export let hideHorizontalDivider: boolean = false;
 </script>
 
 <div class="grid justify-content-center">
-    <slot name="question" class="question">{q}</slot>
+    <slot name="question" class="question" />
     <div class="divider-v" />
-    <slot name="answer" class="answer">{a}</slot>
+    <slot name="answer" class="answer" />
     {#if !hideHorizontalDivider}
         <div class="divider-h" />
     {/if}
