@@ -6,9 +6,13 @@
     let numberAdults: number = 1;
     let numberChildren: number = 0;
     let notes: string;
+    let notAttending: boolean = false;
 
     let submitted: boolean = false;
     let error: boolean = false;
+
+    const baseUrl: string =
+        "https://katherineandspencerweddingrsvp.azurewebsites.net/api";
 
     const handleSubmit = async () => {
         error = false;
@@ -29,10 +33,11 @@
             },
         };
 
-        const response = await fetch(
-            "https://katherineandspencerweddingrsvp.azurewebsites.net/api/WeddingEmail",
-            options
-        );
+        const url = notAttending
+            ? `${baseUrl}/NotAttending`
+            : `${baseUrl}/WeddingEmail`;
+
+        const response = await fetch(url, options);
 
         if (response.ok) {
             localStorage.setItem("rsvp", "true");
@@ -64,7 +69,8 @@
                 id="adults"
                 type="number"
                 min="1"
-                required
+                required={!notAttending}
+                disabled={notAttending}
                 bind:value={numberAdults}
             />
 
@@ -73,7 +79,8 @@
                 id="children"
                 type="number"
                 min="0"
-                required
+                required={!notAttending}
+                disabled={notAttending}
                 bind:value={numberChildren}
             />
 
@@ -84,6 +91,16 @@
                 rows="4"
                 bind:value={notes}
             />
+
+            <div />
+            <div>
+                <input
+                    id="not-attending"
+                    type="checkbox"
+                    bind:checked={notAttending}
+                />
+                <label for="not-attending">Not attending</label>
+            </div>
 
             <div />
             <input type="submit" value="Send" />
