@@ -5,19 +5,15 @@
 </script>
 
 <div class="grid justify-content-center">
-    <h2 class="question">{q}</h2>
+    <slot name="question" class="question">{q}</slot>
     <div class="divider-v" />
-    <p class="answer">{a}</p>
+    <slot name="answer" class="answer">{a}</slot>
     {#if !hideHorizontalDivider}
         <div class="divider-h" />
     {/if}
 </div>
 
 <style>
-    p {
-        text-align: center;
-    }
-
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -36,6 +32,7 @@
 
     .answer {
         justify-self: start;
+        text-align: center;
     }
 
     .divider-h {
