@@ -59,3 +59,11 @@ code {
 .justify-content-around {
 	justify-content: space-around;
 }
+
+.justify-content-center {
+	justify-content: center;
+}
+
+.align-items-baseline {
+	align-items: baseline;
+}
