@@ -93,7 +93,9 @@
             />
 
             <div />
-            <div>
+            <div
+                title="Please select this if you will not be attending and click send below."
+            >
                 <input
                     id="not-attending"
                     type="checkbox"
