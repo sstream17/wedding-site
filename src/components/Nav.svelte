@@ -99,6 +99,7 @@
 		font-weight: 300;
 		padding: 0 1em;
 		text-align: center;
+		background-color: #102C46;
 	}
 
 	ul {
