@@ -2,7 +2,7 @@
     import Seo from "../../components/SEO.svelte";
 </script>
 
-<Seo title="Photos" />
+<Seo title="Photos" description="View photos of Katherine and Spencer." />
 
 <h1>Photos</h1>
 

@@ -3,7 +3,10 @@
     import Seo from "../../components/SEO.svelte";
 </script>
 
-<Seo title="Registry" />
+<Seo
+    title="Registry"
+    description="View the top items and visit the full registries. Bed Bath & Beyond, Target, Wayfair."
+/>
 
 <h1>Registry</h1>
 

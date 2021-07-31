@@ -2,7 +2,10 @@
     import Seo from "../../components/SEO.svelte";
 </script>
 
-<Seo title="Travel" />
+<Seo
+    title="Travel"
+    description="The ceremony and reception will be held at the Holthus Convention Center. Book your hotel reservation at the Hampton Inn York."
+/>
 
 <h1>Travel</h1>
 <h2>Ceremony & Reception</h2>

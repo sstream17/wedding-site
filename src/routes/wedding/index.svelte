@@ -4,7 +4,7 @@
 	let y: number;
 </script>
 
-<Seo />
+<Seo description="We're getting married! Join Katherine Wiles and Spencer Stream for their special day." />
 
 <svelte:window bind:scrollY={y} />
 

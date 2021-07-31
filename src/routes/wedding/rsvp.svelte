@@ -54,7 +54,7 @@
     });
 </script>
 
-<Seo title="RSVP" />
+<Seo title="RSVP" description="Send your RSVP right from our website." />
 
 <h1>RSVP</h1>
 

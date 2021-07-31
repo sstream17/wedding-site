@@ -3,7 +3,7 @@
     import Seo from "../../components/SEO.svelte";
 </script>
 
-<Seo title="FAQ" />
+<Seo title="FAQ" description="Frequently asked questions about our wedding." />
 
 <h1>FAQ</h1>
 

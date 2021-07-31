@@ -3,7 +3,10 @@
     import WeddingPartyCard from "../../components/WeddingPartyCard.svelte";
 </script>
 
-<Seo title="Wedding Party" />
+<Seo
+    title="Wedding Party"
+    description="Elissa Fuelberth, Eden Gose, Sam Wiles, Emily Wiles, Molli Curry, Lauren Nunez. Matthew Schaaf, Zak Keck, Syrus Bomberger, Nick Cowles, Chase Grossman, Drew Stream."
+/>
 
 <h1>Wedding Party</h1>
 <div class="flex-row flex-wrap justify-content-around">
