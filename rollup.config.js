@@ -31,7 +31,11 @@ export default {
 			svelte({
 				dev,
 				hydratable: true,
-				preprocess: sveltePreprocess(),
+				preprocess: sveltePreprocess({
+					postcss: {
+						plugins: [require("autoprefixer")()]
+					}
+				}),
 				emitCss: true
 			}),
 			resolve({
