@@ -44,4 +44,18 @@
     .bottom {
         transform: rotate(12deg);
     }
+
+    @media screen and (max-width: 768px) {
+        .flower-rail {
+            width: 100%;
+        }
+
+        .flowers {
+            height: 40%;
+        }
+
+        .left {
+            display: none;
+        }
+    }
 </style>
