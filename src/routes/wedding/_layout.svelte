@@ -31,5 +31,6 @@
 		position: relative;
 		margin: 0 auto;
 		box-sizing: border-box;
+		background-color: #102C46CC;
 	}
 </style>
