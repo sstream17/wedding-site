@@ -51,6 +51,8 @@
         }
 
         .flowers {
+            background-size: contain;
+            background-repeat: no-repeat;
             height: 40%;
         }
 
