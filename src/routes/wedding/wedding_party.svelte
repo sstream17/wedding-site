@@ -1,10 +1,9 @@
 <script lang="ts">
+    import Seo from "../../components/SEO.svelte";
     import WeddingPartyCard from "../../components/WeddingPartyCard.svelte";
 </script>
 
-<svelte:head>
-	<title>Wedding Party - Katherine & Spencer's Wedding</title>
-</svelte:head>
+<Seo title="Wedding Party" />
 
 <h1>Wedding Party</h1>
 <div class="flex-row flex-wrap justify-content-around">

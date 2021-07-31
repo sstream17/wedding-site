@@ -1,6 +1,8 @@
-<svelte:head>
-	<title>Photos - Katherine & Spencer's Wedding</title>
-</svelte:head>
+<script>
+    import Seo from "../../components/SEO.svelte";
+</script>
+
+<Seo title="Photos" />
 
 <h1>Photos</h1>
 

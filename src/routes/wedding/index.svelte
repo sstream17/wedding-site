@@ -1,10 +1,10 @@
 <script lang="ts">
+	import Seo from "../../components/SEO.svelte";
+
 	let y: number;
 </script>
 
-<svelte:head>
-	<title>Katherine & Spencer's Wedding</title>
-</svelte:head>
+<Seo />
 
 <svelte:window bind:scrollY={y} />
 

@@ -1,10 +1,9 @@
 <script>
     import FaqCard from "../../components/FAQCard.svelte";
+    import Seo from "../../components/SEO.svelte";
 </script>
 
-<svelte:head>
-	<title>FAQ - Katherine & Spencer's Wedding</title>
-</svelte:head>
+<Seo title="FAQ" />
 
 <h1>FAQ</h1>
 

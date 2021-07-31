@@ -1,10 +1,9 @@
 <script lang="ts">
     import StoreRegistry from "../../components/registry/StoreRegistry.svelte";
+    import Seo from "../../components/SEO.svelte";
 </script>
 
-<svelte:head>
-	<title>Registry - Katherine & Spencer's Wedding</title>
-</svelte:head>
+<Seo title="Registry" />
 
 <h1>Registry</h1>
 

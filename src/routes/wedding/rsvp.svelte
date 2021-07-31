@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import Seo from "../../components/SEO.svelte";
 
     let name: string;
     let emailAddress: string;
@@ -53,9 +54,7 @@
     });
 </script>
 
-<svelte:head>
-	<title>RSVP - Katherine & Spencer's Wedding</title>
-</svelte:head>
+<Seo title="RSVP" />
 
 <h1>RSVP</h1>
 

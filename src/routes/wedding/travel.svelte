@@ -1,6 +1,8 @@
-<svelte:head>
-	<title>Travel - Katherine & Spencer's Wedding</title>
-</svelte:head>
+<script>
+    import Seo from "../../components/SEO.svelte";
+</script>
+
+<Seo title="Travel" />
 
 <h1>Travel</h1>
 <h2>Ceremony & Reception</h2>
@@ -23,8 +25,8 @@
 </div>
 
 <p>
-    The wedding ceremony, cocktail hour, and reception will be held at the Holthus
-    Convention Center in York, Nebraska.
+    The wedding ceremony, cocktail hour, and reception will be held at the
+    Holthus Convention Center in York, Nebraska.
 </p>
 
 <h2>Hotel</h2>
