@@ -32,10 +32,11 @@
 		left: 0;
 		width: 100%;
 		will-change: transform;
-		z-index: -1;
+		z-index: 10;
 	}
 
 	h1 {
+		position: relative;
 		font-weight: bolder;
 		font-size: 4em;
 		margin-top: 30vh;
