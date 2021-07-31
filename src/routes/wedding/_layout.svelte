@@ -10,9 +10,17 @@
 	class:center-content={segment !== undefined}
 	class:wider={segment === 'wedding_party'}
 >
-	<div class="flowers top" />
+	<div class="flower-rail left">
+		<div class="flowers top" />
+		<div class="flowers middle" />
+		<div class="flowers bottom" />
+	</div>
 	<slot />
-	<div class="flowers bottom" />
+	<div class="flower-rail right">
+		<div class="flowers top" />
+		<div class="flowers middle" />
+		<div class="flowers bottom" />
+	</div>
 </main>
 
 <style>
@@ -31,25 +39,39 @@
 		box-sizing: border-box;
 	}
 
-	.flowers {
-		position: absolute;
-		height: 200px;
-		width: 400px;
+	.flower-rail {
+		position: fixed;
+		top: 0;
+		height: 100%;
+		width: 20em;
 		z-index: -10;
-		background-size: contain;
-		background-repeat: no-repeat;
+		--x-offset: -4%;
+	}
+
+	.left {
+		left: var(--x-offset);
+		transform: scaleX(-100%);
+	}
+
+	.right {
+		right: var(--x-offset);
+	}
+
+	.flowers {
+		background-image: url(/pink_flower_petals.png);
+		background-size: cover;
+		height: 35%;
 	}
 
 	.top {
-		top: 0;
-		right: 0;
-		background-image: url("/flowers_top.png");
-		background-position-x: 100%;
+		transform: scaleY(-100%);
+	}
+
+	.middle {
+		transform: translateX(25%);
 	}
 
 	.bottom {
-		left: 0;
-		bottom: 0;
-		background-image: url("/flowers_bottom.png");
+		transform: rotate(12deg);
 	}
 </style>
