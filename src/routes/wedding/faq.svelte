@@ -8,9 +8,9 @@
     <h2 slot="question">Where are the ceremony and reception held?</h2>
     <p slot="answer">
         Both the ceremony and reception will be at the Holthus Convention
-        Center. The ceremony will be in |room x| starting at 4pm. A cocktail
+        Center. The ceremony will be in Ballroom B starting at 4pm. A cocktail
         hour will be held in the lobby following the ceremony, with the
-        reception starting at 6pm in |room x|.
+        reception starting at 6pm in Ballroom A.
     </p>
 </FaqCard>
 
