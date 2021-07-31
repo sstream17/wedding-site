@@ -73,3 +73,9 @@
         text us.
     </p>
 </FaqCard>
+
+<style>
+    p {
+        text-align: center;
+    }
+</style>
