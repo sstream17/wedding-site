@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Travel - Katherine & Spencer's Wedding</title>
+</svelte:head>
+
 <h1>Travel</h1>
 <h2>Ceremony & Reception</h2>
 

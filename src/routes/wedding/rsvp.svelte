@@ -53,6 +53,10 @@
     });
 </script>
 
+<svelte:head>
+	<title>RSVP - Katherine & Spencer's Wedding</title>
+</svelte:head>
+
 <h1>RSVP</h1>
 
 {#if !submitted}

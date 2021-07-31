@@ -2,6 +2,10 @@
     import StoreRegistry from "../../components/registry/StoreRegistry.svelte";
 </script>
 
+<svelte:head>
+	<title>Registry - Katherine & Spencer's Wedding</title>
+</svelte:head>
+
 <h1>Registry</h1>
 
 <StoreRegistry

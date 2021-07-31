@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Photos - Katherine & Spencer's Wedding</title>
+</svelte:head>
+
 <h1>Photos</h1>
 
 <div class="grid">

@@ -2,6 +2,10 @@
     import WeddingPartyCard from "../../components/WeddingPartyCard.svelte";
 </script>
 
+<svelte:head>
+	<title>Wedding Party - Katherine & Spencer's Wedding</title>
+</svelte:head>
+
 <h1>Wedding Party</h1>
 <div class="flex-row flex-wrap justify-content-around">
     <div class="flex-col">

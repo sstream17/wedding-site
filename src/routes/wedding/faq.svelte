@@ -2,6 +2,10 @@
     import FaqCard from "../../components/FAQCard.svelte";
 </script>
 
+<svelte:head>
+	<title>FAQ - Katherine & Spencer's Wedding</title>
+</svelte:head>
+
 <h1>FAQ</h1>
 
 <FaqCard>
