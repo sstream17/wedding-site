@@ -11,7 +11,7 @@
     .hamburger {
         cursor: pointer;
         display: none;
-        z-index: 11;
+        z-index: 201;
     }
 
     .icon {
