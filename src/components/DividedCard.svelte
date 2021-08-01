@@ -3,9 +3,9 @@
 </script>
 
 <div class="grid justify-content-center">
-    <slot name="question" class="question" />
+    <slot name="left" class="left" />
     <div class="divider-v" />
-    <slot name="answer" class="answer" />
+    <slot name="right" class="right" />
     {#if !hideHorizontalDivider}
         <div class="divider-h" />
     {/if}
@@ -19,7 +19,7 @@
         margin-bottom: 4rem;
     }
 
-    .question {
+    .left {
         justify-self: end;
     }
 
@@ -28,7 +28,7 @@
         height: 100px;
     }
 
-    .answer {
+    .right {
         justify-self: start;
         text-align: center;
     }
@@ -46,7 +46,7 @@
             place-items: center;
         }
 
-        .question {
+        .left {
             justify-self: center;
         }
 
@@ -54,7 +54,7 @@
             display: none;
         }
 
-        .answer {
+        .right {
             justify-self: center;
         }
 
