@@ -4,7 +4,9 @@
 	let y: number;
 </script>
 
-<Seo description="We're getting married! Join Katherine Wiles and Spencer Stream for their special day." />
+<Seo
+	description="We're getting married! Join Katherine Wiles and Spencer Stream for their special day."
+/>
 
 <svelte:window bind:scrollY={y} />
 
@@ -85,6 +87,7 @@
 		max-width: 56em;
 		padding: 2em;
 		text-align: center;
+		box-sizing: border-box;
 	}
 
 	@media screen and (max-width: 768px) {
