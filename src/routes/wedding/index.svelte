@@ -88,6 +88,7 @@
 		padding: 2em;
 		text-align: center;
 		box-sizing: border-box;
+		background-color: #102c46cc;
 	}
 
 	@media screen and (max-width: 768px) {
