@@ -21,7 +21,7 @@
 	.center-content {
 		max-width: 56em;
 		padding: 2em;
-		background-color: #102c46cc;
+		background-color: #102c46ee;
 	}
 
 	.wider {
