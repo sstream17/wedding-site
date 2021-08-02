@@ -55,7 +55,9 @@
 </p>
 
 <p>
-    <a href="https://hamptoninn3.hilton.com/">Book your reservation online</a>
+    <a
+        href="https://www.hilton.com/en/search/hampton/?query=York,%20Nebraska,%20US&arrivalDate=2022-06-17&departureDate=2022-06-19"
+    >Book your reservation online</a>
     or call (402)362-0222. Use group code
     <strong>WSW</strong>.
 </p>
