@@ -43,7 +43,7 @@
     }
 
     img:hover {
-        transform: scale(110%);
+        transform: scale(1.1);
     }
 
     .grid {

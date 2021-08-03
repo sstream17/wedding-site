@@ -20,7 +20,7 @@
 
     .left {
         left: var(--x-offset);
-        transform: scaleX(-100%);
+        transform: scale(-1, 1);
     }
 
     .right {
@@ -34,7 +34,7 @@
     }
 
     .top {
-        transform: scaleY(-100%);
+        transform: scale(1, -1);
     }
 
     .middle {

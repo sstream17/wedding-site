@@ -15,7 +15,7 @@
 	<img
 		src="./home/hero3_3x2.jpg"
 		alt="Katie and Spencer"
-		style="transform: translate(0, -{y / 10}%) scale({100 + y / 10}%);"
+		style="transform: translate(0, -{y / 10}%) scale({1 + y / 1000});"
 	/>
 </header>
 
