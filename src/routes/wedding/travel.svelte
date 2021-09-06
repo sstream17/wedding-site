@@ -59,7 +59,10 @@
         href="https://www.hilton.com/en/search/hampton/?query=York,%20Nebraska,%20US&arrivalDate=2022-06-17&departureDate=2022-06-19"
     >Book your reservation online</a>
     or call (402)362-0222. Use group code
-    <strong>WSW</strong>.
+    <strong>WSW</strong>. Rooms start at $110 per night. Be sure to apply the
+    special rate with group code
+    <strong>WSW</strong>
+    to get the discount.
 </p>
 
 <style>
