@@ -5,7 +5,7 @@
 
 <Seo
     title="Wedding Party"
-    description="Elissa Fuelberth, Eden Gose, Sam Wiles, Emily Wiles, Molli Curry, Lauren Nunez. Matthew Schaaf, Zak Keck, Syrus Bomberger, Nick Cowles, Chase Grossman, Drew Stream."
+    description="Elissa Fuelberth, Eden Morris, Sam Wiles, Emily Wiles, Molli Curry, Lauren Nunez. Matthew Schaaf, Zak Keck, Syrus Bomberger, Nick Cowles, Chase Grossman, Drew Stream."
 />
 
 <h1>Wedding Party</h1>
@@ -25,7 +25,7 @@
             </p>
         </WeddingPartyCard>
         <WeddingPartyCard
-            name="Eden Gose"
+            name="Eden Morris"
             role="Bridesmaid"
             img="./wedding_party/eden.jpg"
         >
