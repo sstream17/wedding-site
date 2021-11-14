@@ -1,14 +1,7 @@
-<script lang="ts">
-    export let hideHorizontalDivider: boolean = false;
-</script>
-
-<div class="grid justify-content-center">
+<div class="divided-card grid justify-content-center">
     <slot name="left" class="left" />
     <div class="divider-v" />
     <slot name="right" class="right" />
-    {#if !hideHorizontalDivider}
-        <div class="divider-h" />
-    {/if}
 </div>
 
 <style>
@@ -33,12 +26,6 @@
         text-align: center;
     }
 
-    .divider-h {
-        display: none;
-        border-bottom: 1px solid white;
-        width: 200px;
-    }
-
     @media screen and (max-width: 768px) {
         .grid {
             display: grid;
@@ -56,10 +43,6 @@
 
         .right {
             justify-self: center;
-        }
-
-        .divider-h {
-            display: block;
         }
     }
 </style>

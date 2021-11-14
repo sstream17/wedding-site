@@ -41,6 +41,15 @@ code {
 	}
 }
 
+@media screen and (max-width: 768px) {
+	.divided-card + .divided-card::before {
+		content: "";
+		border-bottom: 1px solid white;
+		margin-bottom: 4rem;
+		width: 200px;
+	}
+}
+
 /* Custom bootstrap classes */
 .flex-row {
 	display: flex;
