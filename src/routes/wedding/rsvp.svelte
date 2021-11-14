@@ -3,7 +3,7 @@
     import Rsvp from "../../components/rsvp/RSVP.svelte";
     import Seo from "../../components/SEO.svelte";
 
-    const deadline = new Date(2021, 5, 28);
+    const deadline = new Date(2022, 5, 28);
     const today = new Date();
 
     let continueToForm: boolean = false;
