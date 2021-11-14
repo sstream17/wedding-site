@@ -1,10 +1,10 @@
 <script lang="ts">
     export let continueToForm: boolean = false;
 
-    const onClick = () => {
+    const handleClick = () => {
         continueToForm = true;
     };
 </script>
 
 Sorry
-<input type="submit" value="I understand" on:click={onClick} />
+<input type="submit" value="I understand" on:click={handleClick} />
