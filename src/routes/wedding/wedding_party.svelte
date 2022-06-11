@@ -133,7 +133,7 @@
         <WeddingPartyCard
             name="Nick Cowles"
             role="Groomsman"
-            img="./wedding_party/nicholas.jpg"
+            img="./wedding_party/nick.jpg"
         >
             <p>
                 Nick and Spencer became good friends in high school marching
