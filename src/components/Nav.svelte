@@ -23,7 +23,6 @@
 		{ title: "Wedding Party" },
 		{ title: "Registry" },
 		{ title: "FAQ" },
-		{ title: "RSVP" },
 	];
 
 	const convertToSlug = (value: string) => {
