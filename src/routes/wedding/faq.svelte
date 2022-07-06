@@ -57,18 +57,6 @@
     </p>
 </DividedCard>
 
-<DividedCard>
-    <h2 slot="left">
-        When is the RSVP deadline? Can I RSVP online or through mail?
-    </h2>
-    <p slot="right">
-        The RSVP deadline will be May 28th, 2022 (3 weeks before the wedding).
-        You can RSVP on the website through the
-        <a href="./wedding/rsvp">RSVP tab</a>
-        or by mailing the insert you got with your invitation.
-    </p>
-</DividedCard>
-
 <DividedCard hideHorizontalDivider="true">
     <h2 slot="left">If I still have questions, can I reach out to you?</h2>
     <p slot="right">
