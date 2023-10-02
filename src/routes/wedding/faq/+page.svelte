@@ -1,6 +1,6 @@
 <script>
-    import DividedCard from "../../components/DividedCard.svelte";
-    import Seo from "../../components/SEO.svelte";
+    import DividedCard from "../../../components/DividedCard.svelte";
+    import Seo from "../../../components/SEO.svelte";
 </script>
 
 <Seo title="FAQ" description="Frequently asked questions about our wedding." />

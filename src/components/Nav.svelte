@@ -1,7 +1,9 @@
 <script lang="ts">
+	import { page } from "$app/stores";
+
 	import HamburgerButton from "./HamburgerButton.svelte";
 
-	export let segment: string;
+	$: pathName = $page.url.pathname;
 
 	const mediumWidth: number = 768;
 
@@ -26,11 +28,11 @@
 	];
 
 	const convertToSlug = (value: string) => {
-		return value
+		return `/wedding/${value
 			.replace(/\W+/g, " ")
 			.split(/ /)
 			.map((word) => word.toLowerCase())
-			.join("_");
+			.join("_")}`;
 	};
 
 	const toggleHamburgerMenu = () => {
@@ -67,21 +69,25 @@
 			<div class="right">York, NE</div>
 		</li>
 		{#each pages as page}
-			{#if page.title === 'Home'}
+			{#if page.title === "Home"}
 				<li>
 					<a
 						on:click={() => (collapsed = true)}
-						aria-current={segment === undefined ? 'page' : undefined}
-						href="wedding"
-					>{page.title}</a>
+						aria-current={pathName === undefined
+							? "page"
+							: undefined}
+						href="/">{page.title}</a
+					>
 				</li>
 			{:else}
 				<li>
 					<a
 						on:click={() => (collapsed = true)}
-						aria-current={segment === convertToSlug(page.title) ? 'page' : undefined}
-						href="wedding/{convertToSlug(page.title)}"
-					>{page.title}</a>
+						aria-current={pathName === convertToSlug(page.title)
+							? "page"
+							: undefined}
+						href={convertToSlug(page.title)}>{page.title}</a
+					>
 				</li>
 			{/if}
 		{/each}
@@ -98,7 +104,7 @@
 		font-weight: 300;
 		padding: 0 1em;
 		text-align: center;
-		background-color: #102C46;
+		background-color: #102c46;
 	}
 
 	ul {

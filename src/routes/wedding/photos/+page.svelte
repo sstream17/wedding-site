@@ -1,5 +1,5 @@
 <script>
-    import Seo from "../../components/SEO.svelte";
+    import Seo from "../../../components/SEO.svelte";
 </script>
 
 <Seo title="Photos" description="View photos of Katherine and Spencer." />
@@ -8,13 +8,13 @@
 
 <div class="grid">
     <div class="zoom img-1">
-        <img src="./photos/katie+spencer1.jpg" alt="Katie and Spencer" />
+        <img src="/photos/katie+spencer1.jpg" alt="Katie and Spencer" />
     </div>
     <div class="zoom img-2">
-        <img src="./photos/katie+spencer2.jpg" alt="Katie and Spencer" />
+        <img src="/photos/katie+spencer2.jpg" alt="Katie and Spencer" />
     </div>
     <div class="zoom img-3">
-        <img src="./photos/katie+spencer3.jpg" alt="Katie and Spencer" />
+        <img src="/photos/katie+spencer3.jpg" alt="Katie and Spencer" />
     </div>
 </div>
 

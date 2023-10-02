@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Seo from "../../components/SEO.svelte";
+    import Seo from "../../../components/SEO.svelte";
 </script>
 
 <Seo title="RSVP" description="Send your RSVP right from our website." />

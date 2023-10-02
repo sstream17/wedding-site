@@ -1,21 +1,23 @@
 <script lang="ts">
-	import FlowerRail from "../../components/FlowerRail.svelte";
+	import { page } from "$app/stores";
 
+	import FlowerRail from "../../components/FlowerRail.svelte";
 	import Nav from "../../components/Nav.svelte";
 
-	export let segment: string;
+	$: pathName = $page.url.pathname;
 </script>
 
-<Nav {segment} />
+<Nav />
 
-<main
-	class:center-content={segment !== undefined}
-	class:wider={segment === 'wedding_party'}
+<div
+	class="main"
+	class:center-content={pathName !== "/wedding"}
+	class:wider={pathName === "/wedding/wedding_party"}
 >
 	<FlowerRail side="left" />
 	<slot />
 	<FlowerRail side="right" />
-</main>
+</div>
 
 <style>
 	.center-content {
@@ -28,7 +30,7 @@
 		max-width: 70em !important;
 	}
 
-	main {
+	.main {
 		position: relative;
 		margin: 0 auto;
 		box-sizing: border-box;
