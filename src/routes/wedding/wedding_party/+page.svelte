@@ -1,6 +1,6 @@
 <script lang="ts">
-    import Seo from "../../components/SEO.svelte";
-    import WeddingPartyCard from "../../components/WeddingPartyCard.svelte";
+    import Seo from "../../../components/SEO.svelte";
+    import WeddingPartyCard from "../../../components/WeddingPartyCard.svelte";
 </script>
 
 <Seo

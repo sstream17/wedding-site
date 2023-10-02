@@ -1,6 +1,6 @@
 <script lang="ts">
-    import StoreRegistry from "../../components/registry/StoreRegistry.svelte";
-    import Seo from "../../components/SEO.svelte";
+    import StoreRegistry from "../../../components/registry/StoreRegistry.svelte";
+    import Seo from "../../../components/SEO.svelte";
 </script>
 
 <Seo

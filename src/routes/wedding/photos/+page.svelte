@@ -1,5 +1,5 @@
 <script>
-    import Seo from "../../components/SEO.svelte";
+    import Seo from "../../../components/SEO.svelte";
 </script>
 
 <Seo title="Photos" description="View photos of Katherine and Spencer." />
