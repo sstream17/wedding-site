@@ -42,7 +42,7 @@
     <a href="https://g.page/HamptonInnYork?share">
         <img
             id="hampton-inn-img"
-            src="./travel/hampton_inn.jpg"
+            src="/travel/hampton_inn.jpg"
             alt="Hampton Inn York, NE"
         />
     </a>

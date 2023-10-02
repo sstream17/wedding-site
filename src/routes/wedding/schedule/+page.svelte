@@ -21,7 +21,7 @@
         <h4>4:00 pm</h4>
     </div>
     <div slot="right">
-        <img src="./schedule/Rings.svg" alt="Ceremony" />
+        <img src="/schedule/Rings.svg" alt="Ceremony" />
         <p>
             The ceremony will be held in Ballroom B-E. You may arrive as early
             as 3:30pm. There will be plenty of parking outside the Holthus.
@@ -36,7 +36,7 @@
         <h4>5:00 pm</h4>
     </div>
     <div slot="right">
-        <img src="./schedule/Cheers.svg" alt="Cocktail Hour" />
+        <img src="/schedule/Cheers.svg" alt="Cocktail Hour" />
         <p>
             A cocktail hour will be held in the Holthus lobby between the
             ceremony and the reception. Feel free to grab a drink and mingle
@@ -52,7 +52,7 @@
         <h4>6:00 pm</h4>
     </div>
     <div slot="right">
-        <img src="./schedule/Cake.svg" alt="Reception" />
+        <img src="/schedule/Cake.svg" alt="Reception" />
         <p>
             The reception will start at 6pm in Ballroom A. Follow the signs in
             the lobby to find your way there for dinner, dancing, and cake!
