@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { assets } from '$app/paths';
+
 	import Seo from "../../components/SEO.svelte";
 
 	let y: number;
@@ -13,7 +15,7 @@
 <header class="zoom">
 	<h1>We're getting married!</h1>
 	<img
-		src="/home/hero3_3x2.jpg"
+		src="{assets}/home/hero3_3x2.jpg"
 		alt="Katie and Spencer"
 		style="transform: translate(0, -{y / 10}%) scale({1 + y / 1000});"
 	/>

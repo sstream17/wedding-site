@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from "$app/stores";
 
 	import HamburgerButton from "./HamburgerButton.svelte";
@@ -28,7 +29,7 @@
 	];
 
 	const convertToSlug = (value: string) => {
-		return `/wedding/${value
+		return `${base}/wedding/${value
 			.replace(/\W+/g, " ")
 			.split(/ /)
 			.map((word) => word.toLowerCase())
@@ -56,7 +57,7 @@
 <nav>
 	<div class="title">
 		<HamburgerButton onClick={toggleHamburgerMenu} {collapsed} />
-		<a class="title-center" href="wedding">
+		<a class="title-center" href={base}>
 			<h1>Katherine & Spencer</h1>
 		</a>
 		<div />
@@ -73,10 +74,10 @@
 				<li>
 					<a
 						on:click={() => (collapsed = true)}
-						aria-current={pathName === undefined
+						aria-current={pathName === `${base}/wedding`
 							? "page"
 							: undefined}
-						href="/">{page.title}</a
+						href={base}>{page.title}</a
 					>
 				</li>
 			{:else}

@@ -1,18 +1,20 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { page } from "$app/stores";
 
 	import FlowerRail from "../../components/FlowerRail.svelte";
 	import Nav from "../../components/Nav.svelte";
 
 	$: pathName = $page.url.pathname;
+	const homePath = `${base}/wedding`;
 </script>
 
 <Nav />
 
 <div
 	class="main"
-	class:center-content={pathName !== "/wedding"}
-	class:wider={pathName === "/wedding/wedding_party"}
+	class:center-content={pathName !== homePath}
+	class:wider={pathName === `${homePath}/wedding_party`}
 >
 	<FlowerRail side="left" />
 	<slot />

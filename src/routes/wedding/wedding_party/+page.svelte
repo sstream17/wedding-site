@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { assets } from '$app/paths';
+
     import Seo from "../../../components/SEO.svelte";
     import WeddingPartyCard from "../../../components/WeddingPartyCard.svelte";
 </script>
@@ -14,7 +16,7 @@
         <WeddingPartyCard
             name="Elissa Fuelberth"
             role="Maid of Honor"
-            img="/wedding_party/elissa.jpg"
+            img="{assets}/wedding_party/elissa.jpg"
         >
             <p>
                 Elissa and Katie have been “sisters” from the very start. They
@@ -27,7 +29,7 @@
         <WeddingPartyCard
             name="Eden Morris"
             role="Bridesmaid"
-            img="/wedding_party/eden.jpg"
+            img="{assets}/wedding_party/eden.jpg"
         >
             <p>
                 Eden and Katie have been besties ever since they were babies.
@@ -41,7 +43,7 @@
         <WeddingPartyCard
             name="Sam Wiles"
             role="Bridesmaid"
-            img="/wedding_party/sam.jpg"
+            img="{assets}/wedding_party/sam.jpg"
         >
             <p>
                 Sam and Katie were always the cousins that were so close they
@@ -53,7 +55,7 @@
         <WeddingPartyCard
             name="Emily Wiles"
             role="Bridesmaid"
-            img="/wedding_party/emily.jpg"
+            img="{assets}/wedding_party/emily.jpg"
         >
             <p>
                 Emily and Katie are cousins and have always been close over the
@@ -66,7 +68,7 @@
         <WeddingPartyCard
             name="Molli Curry"
             role="Bridesmaid"
-            img="/wedding_party/molli.jpg"
+            img="{assets}/wedding_party/molli.jpg"
         >
             <p>
                 Molli and Katie’s relationship has always been a wild one. Over
@@ -80,7 +82,7 @@
         <WeddingPartyCard
             name="Lauren Nunez"
             role="Bridesmaid"
-            img="/wedding_party/lauren.jpg"
+            img="{assets}/wedding_party/lauren.jpg"
         >
             <p>
                 Lauren and Katie have been “BFFS4L” ever since they became next
@@ -94,7 +96,7 @@
         <WeddingPartyCard
             name="Matthew Schaaf"
             role="Best Man"
-            img="/wedding_party/matthew.jpg"
+            img="{assets}/wedding_party/matthew.jpg"
         >
             <p>
                 Matthew and Spencer have been best friends for over 12 years
@@ -106,7 +108,7 @@
         <WeddingPartyCard
             name="Zak Keck"
             role="Groomsman"
-            img="/wedding_party/zak.jpg"
+            img="{assets}/wedding_party/zak.jpg"
         >
             <p>
                 Zak and Spencer met as freshman in college in the UNL Marching
@@ -120,7 +122,7 @@
         <WeddingPartyCard
             name="Syrus Bomberger"
             role="Groomsman"
-            img="/wedding_party/syrus.jpg"
+            img="{assets}/wedding_party/syrus.jpg"
         >
             <p>
                 Syrus and Spencer went to high school together and always had a
@@ -133,7 +135,7 @@
         <WeddingPartyCard
             name="Nick Cowles"
             role="Groomsman"
-            img="/wedding_party/nick.jpg"
+            img="{assets}/wedding_party/nick.jpg"
         >
             <p>
                 Nick and Spencer became good friends in high school marching
@@ -148,7 +150,7 @@
         <WeddingPartyCard
             name="Chase Grossman"
             role="Groomsman"
-            img="/wedding_party/chase.jpg"
+            img="{assets}/wedding_party/chase.jpg"
         >
             <p>
                 As Spencer’s older cousin, Chase has known Spencer his entire
@@ -161,7 +163,7 @@
         <WeddingPartyCard
             name="Drew Stream"
             role="Groomsman"
-            img="/wedding_party/drew.jpg"
+            img="{assets}/wedding_party/drew.jpg"
         >
             <p>
                 Drew is Spencer’s younger brother, and has always looked up to
