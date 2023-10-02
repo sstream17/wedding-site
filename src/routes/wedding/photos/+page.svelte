@@ -1,6 +1,4 @@
 <script>
-    import { assets } from '$app/paths';
-
     import Seo from "../../../components/SEO.svelte";
 </script>
 
@@ -10,13 +8,13 @@
 
 <div class="grid">
     <div class="zoom img-1">
-        <img src="{assets}/photos/katie+spencer1.jpg" alt="Katie and Spencer" />
+        <img src="/photos/katie+spencer1.jpg" alt="Katie and Spencer" />
     </div>
     <div class="zoom img-2">
-        <img src="{assets}/photos/katie+spencer2.jpg" alt="Katie and Spencer" />
+        <img src="/photos/katie+spencer2.jpg" alt="Katie and Spencer" />
     </div>
     <div class="zoom img-3">
-        <img src="{assets}/photos/katie+spencer3.jpg" alt="Katie and Spencer" />
+        <img src="/photos/katie+spencer3.jpg" alt="Katie and Spencer" />
     </div>
 </div>
 
