@@ -11,9 +11,9 @@
 <svelte:window bind:scrollY={y} />
 
 <header class="zoom">
-	<h1>We're getting married!</h1>
+	<h1>We're married!</h1>
 	<img
-		src="/home/hero3_3x2.jpg"
+		src="/home/hero.jpg"
 		alt="Katie and Spencer"
 		style="transform: translate(0, -{y / 10}%) scale({1 + y / 1000});"
 	/>

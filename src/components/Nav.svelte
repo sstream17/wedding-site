@@ -6,6 +6,8 @@
 
 	$: pathName = $page.url.pathname;
 
+	const homeUrl = `${base}/wedding`;
+
 	const mediumWidth: number = 768;
 
 	let collapsed: boolean = true;
@@ -57,7 +59,7 @@
 <nav>
 	<div class="title">
 		<HamburgerButton onClick={toggleHamburgerMenu} {collapsed} />
-		<a class="title-center" href={base}>
+		<a class="title-center" href={homeUrl}>
 			<h1>Katherine & Spencer</h1>
 		</a>
 		<div />
@@ -77,7 +79,7 @@
 						aria-current={pathName === `${base}/wedding`
 							? "page"
 							: undefined}
-						href={base}>{page.title}</a
+						href={homeUrl}>{page.title}</a
 					>
 				</li>
 			{:else}
